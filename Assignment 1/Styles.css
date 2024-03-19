@@ -1,0 +1,38 @@
+.header {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #20576E;
+    color: aliceblue;
+    text-align: center;
+    
+}
+
+.container{
+    display: flex;
+    align-items: flex-start;
+}
+
+.section{
+    flex: 1; /* Each section takes up equal space */
+    padding: 0 20px;
+}
+
+.vertical-line{
+    border: none;
+    border-left: 2px solid black;
+    height: 1000px;
+    width: 0;
+}
+
+.header .name{
+padding-top: 20px;
+}
+.personal-info{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 
+400px; */
+    /* grid-template-columns: auto auto auto auto ; */
+}
+
+.phone{
+    color: #20576E}
