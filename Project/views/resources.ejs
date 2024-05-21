@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Page</title>
+    <link rel="stylesheet" href="/stylesheets/resources.css"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="/">AeroLink</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Product</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="customers.html">Customers</a></li>
+                <li><a href="/resources">Resources</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li class="cta" id = "ll"><button id = "bt1"><a href="#">Sign Up</a></button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h1>AJAX Page</h1>
+        <p>Fetching data from a RESTful API using jQuery AJAX.</p>
+    </header>
+
+    <main>
+        <section class="add-story">
+            <h2>Add New Story</h2>
+            <form id="add-story-form">
+                <label for="new-title">Title:</label>
+                <input type="text" id="new-title" name="title" required>
+                <label for="new-content">Content:</label>
+                <textarea id="new-content" name="content" rows="4" required></textarea>
+                <button type="submit">Add Story</button>
+            </form>
+        </section>
+        <section class="api-data">
+            <h2>API Data</h2>
+            <button id="fetch-data">Fetch Data</button>
+            <div id="api-result"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>For inquiries, contact us at <a href="mailto:info@example.com">info@example.com</a></p>
+    </footer>
+
+    <script src="/javascript/ajax.js"></script> 
+</body>
+</html>
