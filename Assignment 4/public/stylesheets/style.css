@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: A3D5FF;
+    width: 100%;
+    overflow-x: hidden;
+    background-image: url('/images/drone2.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+}
+
+nav {
+    background-color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+
+
+.cta {
+    margin-left: 40px;
+}
+#bt1{
+    border: none;
+    background-color: #272f2f;
+    border-radius: 10px;
+    width: 7em;
+}
+.cta button a {
+
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#ll a:hover {
+    color: #272f2f;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #272f2f;
+    color: #fff;
+}
+
+/* .slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+} */
+
+img {
+    vertical-align: middle;
+}
+
+/* .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+} */
+
+/* .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+} */
+
+
+main {
+    padding: 20px;
+}
+
+.countdown {
+    color: white;
+    text-align: center;
+    margin: 50px 0;
+}
+
+#countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#countdown-timer div {
+    background: #272f2f;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#countdown-timer div span {
+    display: block;
+    font-size: 2em;
+}
+
+.event-details {
+    color: white;
+}
+
+.event-details-container {
+    /* background-color: #272f2f;  */
+    background-color: rgba(39, 47, 47, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    color: white;
+    max-width: 300px;
+    text-align: center;
+} 
+
+.event-description-container {
+    /* background-color: #272f2f;  */
+    background-color: rgba(39, 47, 47, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    color: white;
+    max-width: 300px;
+    text-align: center;
+    
+} 
+
+.registration-container {
+    /* background-color: #272f2f;  */
+    background-color: rgba(39, 47, 47, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    color: white;
+    max-width: 300px;
+    /* text-align: center; */
+} 
+
+#rr {
+    text-align: center;
+}
+
+.registration form {
+    display: flex;
+    flex-direction: column; 
+    /* align-items: center;  */
+}
+
+.registration label {
+    margin-bottom: 10px; 
+}
+
+.registration input {
+    /* padding: 8px; */
+    margin-bottom: 10px; 
+    /* width: 100%; 
+    box-sizing: border-box;  */
+}
+
+.event-details h2:hover{
+    color: #272f2f;
+
+}
+
+.event-description{
+    color: white;
+}
+
+.event-description h2:hover{
+    color: #272f2f;
+}
+
+.registration{
+    color: white;
+}
+
+.registration h2:hover{
+    color: #272f2f;
+}
+
+.registration button {
+    /* background-color: #272f2f;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 6em;
+    height: 2em; */
+    padding: 10px 20px;
+    border: none;
+    background-color: #272f2f; 
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #6f8686;
+}
