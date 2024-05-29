@@ -1,0 +1,24 @@
+<!-- views/product.ejs -->
+
+<h1><%= product.name %></h1>
+<p><%= product.description %></p>
+<p>Price: $<%= product.price %></p>
+<p>Category: <%= product.category %></p>
+
+<div class="product-details">
+    
+    <h1><%= product.name %></h1>
+    <p><%= product.description %></p>
+    <p>Price: $<%= product.price %></p>
+    <p>Category: <%= product.category %></p>
+</div>
+
+<style>
+    .product-details{
+        color: white;
+        background-color: #333; /* Optionally, add a background color for better contrast */
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+    }
+</style>

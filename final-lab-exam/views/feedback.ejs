@@ -1,0 +1,60 @@
+
+
+<!-- <section class="feedback-container">
+    <div class="feedback-form">
+        <h2>Submit Feedback</h2>
+         Your form or other content goes here
+    </div>
+</section> -->
+
+<header>
+    <h1>Feedbacks</h1>
+    <p>Tell us about our product!</p>
+</header>
+
+<div class="search-container">
+    <input type="text" id="search-input" placeholder="Search here!">
+    <button id="search-button">Search</button>
+</div>
+
+
+
+<section class="feedback-container">
+    <div class="feedback-form">
+        <h2>Submit Here!</h2>
+        <form action="/feedback" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="feedback-list">
+        <h2>Feedback and Reviews</h2>
+        <% feedbacks.forEach(feedback => { %>
+            <div class="feedback-item">
+                <h3><%= feedback.name %></h3>
+                <p><%= feedback.message %></p>
+                <small><%= feedback.date.toDateString() %></small>
+            </div>
+        <% }) %>
+    </div>
+
+
+
+    <div class="pagination">
+        <% if (current > 1) { %>
+            <a href="?page=<%= current - 1 %>">Previous</a>
+        <% } %>
+        <% for (let i = 1; i <= pages; i++) { %>
+            <a href="?page=<%= i %>" class="<%= i === current ? 'active' : '' %>"><%= i %></a>
+        <% } %>
+        <% if (current < pages) { %>
+            <a href="?page=<%= current + 1 %>">Next</a>
+        <% } %>
+    </div>
+</section> 

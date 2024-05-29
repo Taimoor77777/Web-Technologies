@@ -1,0 +1,32 @@
+<header>
+    <h1>Visited Products</h1>
+    <!-- <p>We'd love to hear from you! Whether you have a question about features, trials, pricing, need a demo, or anything else, our team is ready to answer all your questions.</p> -->
+</header>
+
+<div class="product-list">
+    <% products.forEach(product => { %>
+        <div class="product-view">
+            <h1><%= product.name %></h1>
+            <p><%= product.description %></p>
+            <p>Price: $<%= product.price %></p>
+            <p>Category: <%= product.category %></p>
+        </div>
+    <% }); %>
+</div>
+
+
+<style>
+    .product-view{
+        color: white;
+        background-color: #333; /* Optionally, add a background color for better contrast */
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+    }
+    header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #272f2f;
+    color: #fff;
+}
+</style>
